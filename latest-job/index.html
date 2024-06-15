@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ResultsWeb | Latest Job</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="https://bit.ly/yasirlogo">
     <!--<link rel="stylesheet" href="css/w3.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/default/css/nav.css">
+    <link rel="stylesheet" href="/assets/default/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/default/style.css">
     <style>
        
         
@@ -37,7 +38,7 @@
         .y-link a:hover{
           text-decoration: none;
         }
-        #ads-img{
+        .ads-img{
           width: 100%;
         }
         .y-card-body{
@@ -50,12 +51,12 @@
     <!--navbar start-->
 
     <div class="y-topnav" id="myTopnav">
-      <div class="logo"><a href="#"><img src="img/resultweb2.png" alt="" class="logo-m"></a></div>
+      <div class="logo"><a href="#"><img src="/assets/default/img/resultweb2.png" alt="" class="logo-m"></a></div>
         <a href="/">Home</a>
         <a href="/admission">Admission</a>
         <a href="/admit-card">Admit Card</a>
-        <a href="/result" class="y-active">Result</a>
-        <a href="/latest-job">Latest Job</a>
+        <a href="/result">Result</a>
+        <a href="/latest-job" class="y-active">Latest Job</a>
         <div class="y-dropdown">
           <button class="y-dropbtn">All
               <i class="fa fa-caret-down"></i>
@@ -116,10 +117,10 @@
             </div>
 
             <div class="col-lg-4 col-sm-4">
-              <a href="#" target="_blank">
+              <a href="#" id="adsLink400" target="_blank">
                 <div class="card shadow-lg mb-2" style="position: sticky; top: 50px;">
                   <div class="y-card-body">
-                    <img src="img/DEMO400.jpg" alt="Ads Area" id="ads-img">
+                    <img src="/assets/banner/DEMO400.jpg" class="ads-img" alt="Ads Area" id="adsImg400">
                   </div>
                 </div>
                 </a>
@@ -162,7 +163,9 @@
 
             
             
-            
+    <!-- js -->
+
+    <script src="/assets/default/js/script.js"></script>
 
 
 
