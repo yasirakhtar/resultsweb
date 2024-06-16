@@ -3,9 +3,9 @@
 // Set Link Using Js
 document.addEventListener("DOMContentLoaded", function() {
     // Links 
-    var ads300 = "https://www.mxfly.site3";
+    var adsLink300 = "https://www.mxfly.site3";
 
-    document.getElementById('ads300').href = ads300;
+    document.getElementById('adsLink300').href = adsLink300;
 });
 
 // adsLink400
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Set Link Using Js
 document.addEventListener("DOMContentLoaded", function() {
     // Links 
-    var ads728 = "https://www.mxfly.site7";
+    var adsLink728 = "https://www.mxfly.site7";
 
-    document.getElementById('ads728').href = ads728;
+    document.getElementById('adsLink728').href = adsLink728;
 });
 
 
