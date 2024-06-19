@@ -64,19 +64,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Change A Tag Url By Using Specific Class 
 
-// JavaScript to update 'a' tags containing 'i' tag with specific class
 document.addEventListener("DOMContentLoaded", function() {
-    // Nayi link jo aap set karna chahte hain
-    var newLink = "https://www.instagram.com/yasirakhtar01";
+    var newLink = "https://www.instagram.com/yasirakhtar0";
 
-    // Sabhi 'i' tags ko select karna jinki class 'special-icon' hai
     var icons = document.querySelectorAll('i.fa-instagram');
 
-    // Har selected 'i' tag ka parent 'a' tag ka href attribute update karna
     icons.forEach(function(icon) {
-        var parentLink = icon.closest('a'); // Parent 'a' tag ko dhundhna
+        var parentLink = icon.closest('a');
         if (parentLink) {
-            parentLink.href = newLink; // 'a' tag ka href attribute update karna
+            parentLink.href = newLink;
         }
     });
 });
