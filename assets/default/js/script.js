@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Img Source Link
     var adsImg300 = "/assets/banner/ads300.png";
 
-    //document.getElementById('adsImg300').src = adsImg300;
+    document.getElementById('adsImg300').src = adsImg300;
 });
 
 // adsImg 400
