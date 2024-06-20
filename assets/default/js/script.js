@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // JavaScript to update specific img tag by ID
 document.addEventListener("DOMContentLoaded", function() {
     // Img Source Link
-    var adsImg300 = "/assets/banner/ads300.png";
+    var adsImg300 = "/assets/banner/adsside.png";
 
     document.getElementById('adsImg300').src = adsImg300;
 });
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // JavaScript to update specific img tag by ID
 document.addEventListener("DOMContentLoaded", function() {
     // Img Source Link
-    var adsImg400 = "/assets/banner/DEMO400.jpg";
+    var adsImg400 = "/assets/banner/adssquare.jpg";
 
     document.getElementById('adsImg400').src = adsImg400;
 });
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // JavaScript to update specific img tag by ID
 document.addEventListener("DOMContentLoaded", function() {
     // Img Source Link
-    var adsImg728 = "/assets/banner/ads728.jpg";
+    var adsImg728 = "/assets/banner/adstop.jpg";
 
     document.getElementById('adsImg728').src = adsImg728;
 });
