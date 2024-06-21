@@ -47,3 +47,27 @@
     position: sticky;
     top: 50px;
   }
+
+  #adsImg728{
+    cursor: pointer;
+    border: 1px solid #007bff;
+    padding: 1px;
+    box-sizing: border-box;
+  }
+
+  #demo-watermark {
+    width: 300px;
+    text-align: center;
+    position: fixed;
+    top: 170px;
+    right: -40px; 
+    background: #007bff;
+    color: white;
+    padding: 10px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    transform: rotate(45deg); 
+    transform-origin: top right; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}

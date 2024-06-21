@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('adsLink728').href = adsLink728;
 });
 
+// JavaScript to handle image click and open a link
+document.getElementById('adsImg728').addEventListener('click', function() {
+    window.open('https://www.mxfly.site7', '_blank');
+});
+
 
 
 // ------------------ Change Img Source URL ------------------------------------
@@ -76,3 +81,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// ----- Add Another Js Script File---------------------------------------------------
+
+function addEffectsJs() {
+    var script = document.createElement('script');
+    script.src = '/assets/default/js/effects.js';
+    script.onload = function() {
+        console.log('Script loaded successfully.');
+    };
+    script.onerror = function() {
+        console.error('Error loading script.');
+    };
+    document.body.appendChild(script);
+}
+addEffectsJs();
