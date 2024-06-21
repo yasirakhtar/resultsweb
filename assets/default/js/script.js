@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// ----- Add Another Js Script File---------------------------------------------------
+// ----- Add Another Js Script File--------------------------------
 
 function addEffectsJs() {
     var script = document.createElement('script');
