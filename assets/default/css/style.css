@@ -1,3 +1,16 @@
+.main-container{
+  /* border: 1px solid #000; */
+  padding: 0 !important;
+}
+
+.col-lg-12{
+  padding: 10px !important;
+}
+
+.y-card-pad{
+  padding: 0 !important;
+}
+
 #adsImg300 {
   width: 100%;
   height: auto;
