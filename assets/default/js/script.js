@@ -17,13 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // adsLink728
 
-// Set Link Using Js
 document.addEventListener("DOMContentLoaded", function () {
     // Links 
     var adsLink728 = "https://www.mxfly.site7";
 
     document.getElementById('adsLink728').href = adsLink728;
 });
+
+
+
+//-----------------------------------------------------
 
 // JavaScript to handle image click and open a link
 document.getElementById('adsImg728').addEventListener('click', function () {
