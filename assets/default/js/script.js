@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // adsLink400
-
-// Set Link Using Js
 document.addEventListener("DOMContentLoaded", function () {
     // Links 
     var adsLink400 = "https://www.mxfly.site4";
