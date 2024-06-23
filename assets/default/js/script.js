@@ -1,7 +1,6 @@
 //ads
 
-// Set Link Using Js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Links 
     var adsLink300 = "https://www.mxfly.site3";
 
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // adsLink400
 
 // Set Link Using Js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Links 
     var adsLink400 = "https://www.mxfly.site4";
 
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // adsLink728
 
 // Set Link Using Js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Links 
     var adsLink728 = "https://www.mxfly.site7";
 
@@ -29,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // JavaScript to handle image click and open a link
-document.getElementById('adsImg728').addEventListener('click', function() {
+document.getElementById('adsImg728').addEventListener('click', function () {
     window.open('https://www.mxfly.site7', '_blank');
 });
 
@@ -38,7 +37,7 @@ document.getElementById('adsImg728').addEventListener('click', function() {
 // ------------------ Change Img Source URL ------------------------------------
 
 // JavaScript to update specific img tag by ID
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Img Source Link
     var adsImg300 = "/assets/banner/adsside.png";
 
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // adsImg 400
 
 // JavaScript to update specific img tag by ID
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Img Source Link
     var adsImg400 = "/assets/banner/adssquare.jpg";
 
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // adsImg 728
 
 // JavaScript to update specific img tag by ID
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Img Source Link
     var adsImg728 = "/assets/banner/adstop.jpg";
 
@@ -69,12 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Change A Tag Url By Using Specific Class 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var newLink = "https://www.instagram.com/yasirakhtar0";
 
     var icons = document.querySelectorAll('i.fa-instagram');
 
-    icons.forEach(function(icon) {
+    icons.forEach(function (icon) {
         var parentLink = icon.closest('a');
         if (parentLink) {
             parentLink.href = newLink;
@@ -87,10 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function addEffectsJs() {
     var script = document.createElement('script');
     script.src = '/assets/default/js/effects.js';
-    script.onload = function() {
+    script.onload = function () {
         console.log('Script loaded successfully.');
     };
-    script.onerror = function() {
+    script.onerror = function () {
         console.error('Error loading script.');
     };
     document.body.appendChild(script);
