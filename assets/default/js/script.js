@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     // Links 
-    var adsLink300 = "https://www.mxfly.site3";
+    var adsLink300 = "https://www.mxfly.site";
 
     document.getElementById('adsLink300').href = adsLink300;
 });
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // adsLink400
 document.addEventListener("DOMContentLoaded", function () {
     // Links 
-    var adsLink400 = "https://www.mxfly.site4";
+    var adsLink400 = "https://www.mxfly.site";
 
     document.getElementById('adsLink400').href = adsLink400;
 });
@@ -19,18 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Links 
-    var adsLink728 = "https://www.mxfly.site7";
+    var adsLink728 = "https://www.mxfly.site";
 
     document.getElementById('adsLink728').href = adsLink728;
 });
 
+//adsImgLink 728 -----------------------------------------------------
 
-
-//-----------------------------------------------------
-
-// JavaScript to handle image click and open a link
-document.getElementById('adsImg728').addEventListener('click', function () {
-    window.open('https://www.mxfly.site7', '_blank');
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('adsImg728').addEventListener('click', function () {
+        window.open('https://www.mxfly.site', '_blank');
+    });
 });
 
 
@@ -67,12 +66,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // --------------------------------------------------------------
 
-// Change A Tag Url By Using Specific Class 
+// Change A Tag Url By Using Instagram Class Name
 
 document.addEventListener("DOMContentLoaded", function () {
     var newLink = "https://www.instagram.com/yasirakhtar0";
 
     var icons = document.querySelectorAll('i.fa-instagram');
+
+    icons.forEach(function (icon) {
+        var parentLink = icon.closest('a');
+        if (parentLink) {
+            parentLink.href = newLink;
+        }
+    });
+});
+
+// Change A Tag Url By Using Facebook Class Name
+
+document.addEventListener("DOMContentLoaded", function () {
+    var newLink = "https://facebook.com/yasirakhtar0";
+
+    var icons = document.querySelectorAll('i.fa-facebook');
+
+    icons.forEach(function (icon) {
+        var parentLink = icon.closest('a');
+        if (parentLink) {
+            parentLink.href = newLink;
+        }
+    });
+});
+
+// Change A Tag Url By Using Twitter Class Name
+
+document.addEventListener("DOMContentLoaded", function () {
+    var newLink = "https://twitter.com/yasirakhtar0";
+
+    var icons = document.querySelectorAll('i.fa-twitter');
+
+    icons.forEach(function (icon) {
+        var parentLink = icon.closest('a');
+        if (parentLink) {
+            parentLink.href = newLink;
+        }
+    });
+});
+
+// Change A Tag Url By Using Telegram Class Name
+
+document.addEventListener("DOMContentLoaded", function () {
+    var newLink = "https://t.me/yasirakhtar0";
+
+    var icons = document.querySelectorAll('i.fa-telegram');
 
     icons.forEach(function (icon) {
         var parentLink = icon.closest('a');
@@ -96,3 +140,19 @@ function addEffectsJs() {
     document.body.appendChild(script);
 }
 addEffectsJs();
+
+
+// ----- Add AntiInspect Js Script File--------------------------------
+
+function addAntiJs() {
+    var script = document.createElement('script');
+    script.src = '/assets/default/js/antiscript.js';
+    script.onload = function () {
+        console.log('Script loaded successfully.');
+    };
+    script.onerror = function () {
+        console.error('Error loading script.');
+    };
+    document.body.appendChild(script);
+}
+addAntiJs();
