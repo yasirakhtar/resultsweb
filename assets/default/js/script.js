@@ -156,3 +156,10 @@ function addAntiJs() {
     document.body.appendChild(script);
 }
 addAntiJs();
+
+function disableRightClick() {
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+}
+disableRightClick();
