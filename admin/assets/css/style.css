@@ -1,0 +1,192 @@
+.admin-header{
+    box-shadow: 0 0 10px 1px #7e7e7e67;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.admin-header nav{
+    padding: 0 !important;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+}
+
+.admin-header nav .admin-header-left ul{
+    list-style: none;
+    display: flex;
+    margin: 0 !important;
+}
+
+.admin-header nav .admin-header-left ul li a{
+    padding: 20px 20px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.admin-header nav .admin-header-left ul li a:hover{
+    background: #ececec;
+}
+
+.admin-nav-active{
+    background: #ececec;
+}
+
+.admin-header-right{
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.admin-nav-profile-link{
+    display: flex;
+    align-items: center;
+}
+
+.admin-name-box{
+    display: flex;
+    align-items: center;
+}
+
+.admin-nav-profile-link p{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-right: 8px;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.admin-nav-profile-link .admin-profile-img{
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.5px solid #000;
+}
+
+.admin-nav-profile-link .admin-profile-img img{
+    width: 100%;
+}
+
+.admin-nav-profile-link-box{
+    position: absolute;
+    bottom: -122px;
+    right: 20px;
+    width: 200px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    background: #fff;
+    padding: 8px 8px 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 1px #bebebe67;
+    z-index: -9999;
+    display: none;
+}
+
+.admin-nav-profile-link-box a{
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #7e7e7e67;
+}
+
+.admin-nav-profile-link-box a:hover{
+    background: #f5f5f5;
+}
+
+.admin-nav-profile-link-box button{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px
+}
+
+.admin-footer{
+    margin-top: 70px;
+}
+
+.admin-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.admin-copyright p{
+    margin: 0 !important;
+    font-weight: bold;
+}
+
+/* ------------------------------------- */
+
+.admin-content-box{
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+}
+
+.admin-row{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.admin-dash-report-box-top{
+    width: 23%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 0 3px 1px #7e7e7e96;
+}
+
+.admin-dash-report-box-top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-dash-icon-box{
+    border-right: 1px solid #000;
+    padding: 10px;
+    padding-right: 15px;
+}
+
+.admin-dash-report-box-top .admin-dash-report-box p{
+    margin: 0 !important;
+    font-size: 13px;
+}
+
+.admin-dash-report-box-top .admin-dash-report-box h3{
+    margin: 0 !important;
+    font-weight: 700;
+}
+
+.admin-title{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.admin-row-top .admin-dash-report-box-top{
+    width: 32%;
+}
+
+.admin-row-2{
+    justify-content: start;
+    gap: 33px;
+}

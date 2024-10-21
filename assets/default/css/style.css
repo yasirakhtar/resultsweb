@@ -95,3 +95,79 @@
   transform-origin: top right;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* Admin Page ----------------------------- */
+
+.main-box{
+  height: 100vh;
+}
+
+.form-box{
+  width: 30%;
+  padding: 40px 0;
+}
+
+#adminLoginForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-box{
+  height: 40px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+#adminLoginForm input{
+  outline: none;
+  border: none;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.input-box:nth-child(2){
+  padding-right: 5px;
+}
+
+#adminLoginForm .input-box i{
+  cursor: pointer;
+}
+
+.admin-pass{
+  width: 90%;
+  border: none;
+}
+
+
+
+#adminLoginForm button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  background: #007bff;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.error{
+  color: red ;
+  animation: shake 0.5s;
+  transition: 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
