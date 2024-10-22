@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard | ResultWeb</title>
+  <link rel="icon" type="image/x-icon" href="https://bit.ly/yasirlogo">
+  <!--<link rel="stylesheet" href="css/w3.css">-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="/assets/default/css/nav.css">
+  <link rel="stylesheet" href="/assets/default/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/default/css/style.css">
+  <link rel="stylesheet" href="/admin/assets/css/style.css">
+</head>
+
+<body style="overflow: hidden;">
+  
+    <header class="admin-header">
+        <nav>
+            <div class="admin-header-left">
+                <ul>
+                    <li><a href="/admin/dashboard/" id="admin-nav-links">Dashboard</a></li>
+                    <li><a href="/admin/posts/" id="admin-nav-links">Post</a></li>
+                    <li><a href="/admin/admins/" class="admin-nav-active" id="admin-nav-links">Admins</a></li>
+                    <li><a href="/admin/users/" id="admin-nav-links">Users</a></li>
+                    <li><a href="/admin/announcement/" id="admin-nav-links">Announcement</a></li>
+                    <li><a href="/admin/settings/" id="admin-nav-links">Settings</a></li>
+                </ul>
+            </div>
+            <div class="admin-header-right" id="adminHeaderLinks">
+                <div class="admin-nav-profile-link">
+                    <div class="admin-name-box">
+                        <p id="adminUsername">yasir</p>
+                    </div>
+                    <div class="admin-profile-img">
+                        <img src="/admin/assets/img/admin.jpg" id="adminImg" alt="your-image" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="admin-nav-profile-link-box" id="adminNavLinkBox">
+                <a href="/admin/profile">Profile</a>
+                <button id="adminLogoutBtn" class="bg-danger text-white">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header end -->
+
+    <!-- content -->
+
+    <div class="admin-content-box">
+        <div class="admin-admins-box">
+            <div class="admin-page-content">
+                <h5>Admins</h5>
+
+                <div class="add-new-admin-btn-box">
+                    <button id="addNewAdminOpenPopUpBtn">Add New</button>
+                </div>
+
+                <div class="admins-list-box">
+                    <table border="1">
+                        <tr>
+                            <td>No.</td>
+                            <td>Name</td>
+                            <td>Username</td>
+                            <td>Email</td>
+                            <td>Edit/Remove</td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Yasir Akhtar</td>
+                            <td>yasir</td>
+                            <td>yasircpr@gmail.com</td>
+                            <td><button>Edit</button> <button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Owner</td>
+                            <td>owner</td>
+                            <td>owner@resultweb.in</td>
+                            <td><button>Edit</button> <button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Name</td>
+                            <td>Username</td>
+                            <td>example@gmail.com</td>
+                            <td><button>Edit</button> <button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Joe</td>
+                            <td>joydoe</td>
+                            <td>joydoe@mail.com</td>
+                            <td><button id="adminEditBtn">Edit</button> <button id="adminRemoveBtn">Remove</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-admin-popup-box" id="addAdminPopUpBox">
+        <div class="add-admin-popup">
+            <form action="" method="post">
+                <h5>Add New</h5>
+                <div class="admin-name-box">
+                    <input type="text" id="addAdminName" placeholder="Full Name." required/>
+                </div>
+
+                <div class="admin-username-box">
+                    <input type="text" id="addAdminUserName" placeholder="Username" required />
+                    <select name="adminRole" id="addAdminRole">
+                        <option value="0">Select Role</option>
+                        <option value="admin">Admin</option>
+                        <option value="owner">Owner</option>
+                        <option value="dev">Dev</option>
+                    </select>
+                </div>
+
+                <div class="admin-email-box">
+                    <input type="email" id="addAdminEmail" placeholder="Email. (i. e. example@mail.com)" required />
+                </div>
+
+                <div class="admin-add-btn-box">
+                    <button type="submit">Add Admin</button>
+                    <button type="button" id="addAdminCancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- content End -->
+
+    <!-- Admin Footer Copyright -->
+
+    <footer>
+        <div class="admin-footer">
+            <div class="admin-copyright">
+                <p id="adminCopyrightText">Developed By - <a href="https://mxfly.site/" id="adminCopyrightLink">YASIR AKHTAR</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Footer Copyright End -->
+
+
+    <!-- js -->
+
+    <script src="/admin/assets/js/script.js"></script>
+</body>
+
+</html>

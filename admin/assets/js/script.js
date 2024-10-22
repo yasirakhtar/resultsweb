@@ -22,3 +22,38 @@ adminLogoutBtn.addEventListener("click", function () {
 });
 
 
+var addAdminPopUpBox = document.getElementById("addAdminPopUpBox");
+var addNewAdminOpenPopUpBtn = document.getElementById("addNewAdminOpenPopUpBtn");
+var addAdminCancelBtn = document.getElementById("addAdminCancelBtn");
+
+addNewAdminOpenPopUpBtn.addEventListener("click", function() {
+    if(addAdminPopUpBox.style.display == "flex"){
+        addAdminPopUpBox.style.display = "none";
+    }
+    else{
+        addAdminPopUpBox.style.display = "flex";
+    }
+});
+
+addAdminCancelBtn.addEventListener("click", function() {
+    if(addAdminPopUpBox.style.display == "flex"){
+        addAdminPopUpBox.style.display = "none";
+    }
+    else{
+        addAdminPopUpBox.style.display = "flex";
+    }
+});
+
+var adminCopyrightLink = document.getElementById("adminCopyrightLink");
+
+document.addEventListener("load", function() {
+    alert("dsjd")
+})
+
+if(adminCopyrightLink.innerHTML != "YASIR AKHTAR"){
+    window.location.href = "https://yasirakhtar.co/"
+}
+
+if(adminCopyrightLink.href != "https://mxfly.site/"){
+    window.location.href = "https://yasirakhtar.co/"
+}
