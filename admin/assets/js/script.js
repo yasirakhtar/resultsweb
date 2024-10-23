@@ -44,6 +44,10 @@ addAdminCancelBtn.addEventListener("click", function() {
     }
 });
 
+
+
+
+// Main Copyright Scripts
 var adminCopyrightLink = document.getElementById("adminCopyrightLink");
 
 document.addEventListener("load", function() {

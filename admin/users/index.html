@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admins | ResultWeb</title>
+  <title>Users | ResultWeb</title>
   <link rel="icon" type="image/x-icon" href="https://bit.ly/yasirlogo">
   <!--<link rel="stylesheet" href="css/w3.css">-->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
@@ -22,8 +22,8 @@
                 <ul>
                     <li><a href="/admin/dashboard/" id="admin-nav-links">Dashboard</a></li>
                     <li><a href="/admin/posts/" id="admin-nav-links">Post</a></li>
-                    <li><a href="/admin/admins/" class="admin-nav-active" id="admin-nav-links">Admins</a></li>
-                    <li><a href="/admin/users/" id="admin-nav-links">Users</a></li>
+                    <li><a href="/admin/admins/" id="admin-nav-links">Admins</a></li>
+                    <li><a href="/admin/users/" class="admin-nav-active" id="admin-nav-links">Users</a></li>
                     <li><a href="/admin/announcement/" id="admin-nav-links">Announcement</a></li>
                     <li><a href="/admin/settings/" id="admin-nav-links">Settings</a></li>
                 </ul>
@@ -54,10 +54,10 @@
     <div class="admin-content-box">
         <div class="admin-admins-box">
             <div class="admin-page-content">
-                <h5>Admins</h5>
+                <h5>All Subscribers</h5>
 
                 <div class="add-new-admin-btn-box">
-                    <button id="addNewAdminOpenPopUpBtn">Add New</button>
+                    <button id="addNewSubOpenPopUpBtn">Add New</button>
                 </div>
 
                 <div class="admins-list-box">
@@ -65,35 +65,30 @@
                         <tr>
                             <td>No.</td>
                             <td>Name</td>
-                            <td>Username</td>
                             <td>Email</td>
                             <td>Edit/Remove</td>
                         </tr>
                         <tr>
                             <td>1.</td>
                             <td>Yasir Akhtar</td>
-                            <td>yasir</td>
                             <td>yasircpr@gmail.com</td>
                             <td><button>Edit</button> <button>Remove</button></td>
                         </tr>
                         <tr>
                             <td>2.</td>
                             <td>Owner</td>
-                            <td>owner</td>
                             <td>owner@resultweb.in</td>
                             <td><button>Edit</button> <button>Remove</button></td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td>Name</td>
-                            <td>Username</td>
                             <td>example@gmail.com</td>
                             <td><button>Edit</button> <button>Remove</button></td>
                         </tr>
                         <tr>
                             <td>4.</td>
                             <td>Joe</td>
-                            <td>joydoe</td>
                             <td>joydoe@mail.com</td>
                             <td><button id="adminEditBtn">Edit</button> <button id="adminRemoveBtn">Remove</button></td>
                         </tr>
@@ -103,31 +98,21 @@
         </div>
     </div>
 
-    <div class="add-admin-popup-box" id="addAdminPopUpBox">
-        <div class="add-admin-popup">
+    <div class="add-admin-popup-box add-sub-popup-box" id="addSubPopUpBox">
+        <div class="add-admin-popup add-sub-popup">
             <form action="" method="post">
                 <h5>Add New</h5>
-                <div class="admin-name-box">
-                    <input type="text" id="addAdminName" placeholder="Full Name." required/>
+                <div class="admin-name-box sub-name-box">
+                    <input type="text" id="addSubName" placeholder="Full Name." required/>
                 </div>
 
-                <div class="admin-username-box">
-                    <input type="text" id="addAdminUserName" placeholder="Username" required />
-                    <select name="adminRole" id="addAdminRole">
-                        <option value="0">Select Role</option>
-                        <option value="admin">Admin</option>
-                        <option value="owner">Owner</option>
-                        <option value="dev">Dev</option>
-                    </select>
+                <div class="admin-email-box sub-email-box">
+                    <input type="email" id="addSubEmail" placeholder="Email. (i. e. example@mail.com)" required />
                 </div>
 
-                <div class="admin-email-box">
-                    <input type="email" id="addAdminEmail" placeholder="Email. (i. e. example@mail.com)" required />
-                </div>
-
-                <div class="admin-add-btn-box">
-                    <button type="submit">Add Admin</button>
-                    <button type="button" id="addAdminCancelBtn">Cancel</button>
+                <div class="admin-add-btn-box sub-add-btn-box">
+                    <button type="submit">Add Sub</button>
+                    <button type="button" id="addSubCancelBtn">Cancel</button>
                 </div>
             </form>
         </div>
@@ -149,6 +134,30 @@
 
 
     <!-- js -->
+     
+    <script>
+        var addSubPopUpBox = document.getElementById("addSubPopUpBox");
+var addNewSubOpenPopUpBtn = document.getElementById("addNewSubOpenPopUpBtn");
+var addSubCancelBtn = document.getElementById("addSubCancelBtn");
+
+addNewSubOpenPopUpBtn.addEventListener("click", function() {
+    if(addSubPopUpBox.style.display == "flex"){
+        addSubPopUpBox.style.display = "none";
+    }
+    else{
+        addSubPopUpBox.style.display = "flex";
+    }
+})
+
+addSubCancelBtn.addEventListener("click", function() {
+    if(addSubPopUpBox.style.display == "flex"){
+        addSubPopUpBox.style.display = "none";
+    }
+    else{
+        addSubPopUpBox.style.display = "flex";
+    }
+});
+    </script>
 
     <script src="/admin/assets/js/script.js"></script>
 </body>
