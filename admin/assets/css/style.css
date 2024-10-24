@@ -407,3 +407,190 @@ a{
 .add-admin-popup form button:nth-child(2):focus{
     box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .5)
 }
+
+/* ------------- Settings ------------- */
+
+.site-settings-box{
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 3px 1px #7e7e7e96;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.settings-left-box{
+    width: 25%;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.settings-left-menu{
+    padding: 8px;
+}
+
+.settings-left-box ul{
+    list-style: none;
+}
+
+.settings-left-box ul li{
+    padding: 8px 10px;
+    list-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 0 0 -40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+    transition: all ease-in-out 0.3s;
+}
+
+.settings-left-box ul li:hover{
+    background: #f5f5f5;
+    color: #0056b3;
+}
+
+.settings-left-box ul .settings-left-active{
+    background: #f5f5f5;
+    color: #0056b3;
+}
+
+.settings-right-box{
+    border: 1px solid rgba(0, 0, 0, .1);
+    width: 75%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* -------  */
+
+.settings-right-content-box{
+    width: 100%;
+    padding: 10px;
+}
+
+.general-settings{
+    overflow: hidden;
+}
+
+.gen-site-logo-top, .gen-site-favicon-box{
+    padding-bottom: 5px;
+}
+
+.gen-site-logo-box, .gen-site-favicon-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gen-site-favicon-box{
+    margin-top: 15px;
+}
+
+.gen-site-logo-choose-box, .gen-site-favicon-choose-box{
+    width: 40%;
+}
+
+.gen-site-logo-choose-box p, .gen-site-favicon-choose-box p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px !important;
+}
+
+.gen-site-logo-choose-box input, .gen-site-favicon-choose-box input{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.gen-site-logo-prew-box, .gen-site-favicon-prew-box{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+}
+
+.gen-site-favicon-prew-box{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.gen-site-logo-prew-box img, .gen-site-favicon-prew-box img{
+    width: 130px;
+}
+
+.gen-site-favicon-prew-box img{
+    width: 30px;
+}
+
+.gen-site-name-box, .gen-site-dec-box{
+    margin-top: 8px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    padding-top: 15px;
+}
+
+.gen-site-dec-box{
+    margin-top: 15px;
+}
+
+.gen-site-name p, .gen-site-dec-box p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px !important;
+}
+
+.gen-site-name input, .gen-site-dec-box input{
+    width: 100%;
+    outline: none;
+    height: 35px;
+    padding: 0 8px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 3px;
+}
+
+.gen-setting-update-btn-box{
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 30px;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.gen-setting-update-btn-box button{
+    font-size: 13px;
+    font-weight: 600;
+    background: #26bb49;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.gen-setting-update-btn-box button:hover{
+    background: #28a745;
+}
+
+.gen-setting-update-btn-box button:focus{
+    box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
+}
+
+.gen-content-box{
+    display: none;
+}
+
+.gen-visible{
+    display: block;
+}

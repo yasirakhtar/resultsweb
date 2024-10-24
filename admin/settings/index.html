@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | ResultWeb</title>
+  <link rel="icon" type="image/x-icon" href="https://bit.ly/yasirlogo">
+  <!--<link rel="stylesheet" href="css/w3.css">-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="/assets/default/css/nav.css">
+  <link rel="stylesheet" href="/assets/default/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/default/css/style.css">
+  <link rel="stylesheet" href="/admin/assets/css/style.css">
+</head>
+
+<body style="overflow: hidden;">
+  
+    <header class="admin-header">
+        <nav>
+            <div class="admin-header-left">
+                <ul>
+                    <li><a href="/admin/dashboard/" id="admin-nav-links">Dashboard</a></li>
+                    <li><a href="/admin/posts/" id="admin-nav-links">Post</a></li>
+                    <li><a href="/admin/admins/" id="admin-nav-links">Admins</a></li>
+                    <li><a href="/admin/users/" id="admin-nav-links">Users</a></li>
+                    <li><a href="/admin/announcement/" id="admin-nav-links">Announcement</a></li>
+                    <li><a href="/admin/settings/" class="admin-nav-active" id="admin-nav-links">Settings</a></li>
+                </ul>
+            </div>
+            <div class="admin-header-right" id="adminHeaderLinks">
+                <div class="admin-nav-profile-link">
+                    <div class="admin-name-box">
+                        <p id="adminUsername">yasir</p>
+                    </div>
+                    <div class="admin-profile-img">
+                        <img src="/admin/assets/img/admin.jpg" id="adminImg" alt="your-image" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="admin-nav-profile-link-box" id="adminNavLinkBox">
+                <a href="/admin/profile">Profile</a>
+                <button id="adminLogoutBtn" class="bg-danger text-white">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header end -->
+
+    <!-- content -->
+
+    <div class="admin-content-box">
+        <div class="admin-admins-box">
+            <div class="admin-page-content">
+                <h5>Settings</h5>
+
+                <div class="site-settings-box">
+                    <div class="settings-left-box">
+                        <div class="settings-left-menu">
+                            <ul>
+                                <li class="settings-left-active gen-menu-link">General Settings</li>
+                                <li class="gen-menu-link">SEO</li>
+                                <li class="gen-menu-link">Themes Settings</li>
+                                <li class="gen-menu-link">Other</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="settings-right-box">
+                        <div class="settings-right-content-box">
+                            <div class="general-settings gen-content-box gen-visible" id="generalSettings">
+                                <div class="gen-site-logo-top">
+                                    <div class="gen-site-logo-box">
+                                        <div class="gen-site-logo-choose-box">
+                                            <p>Site Logo</p>
+                                            <input type="file" id="chooseSiteLogo" />
+                                        </div>
+                                        
+                                        <div class="gen-site-logo-prew-box">
+                                            <img src="/assets/default/img/resultweb.png" id="siteLogoPrew" alt="site logo">
+                                        </div>
+                                    </div>
+                                    <div class="gen-site-favicon-box">
+                                        <div class="gen-site-favicon-choose-box">
+                                            <p>Site Logo</p>
+                                            <input type="file" id="chooseSiteLogo" />
+                                        </div>
+                                        
+                                        <div class="gen-site-favicon-prew-box">
+                                            <img src="/assets/default/img/logo.png" id="siteFaviconPrew" alt="site logo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="gen-site-name-box">
+                                    <div class="gen-site-name">
+                                        <p>Site Name</p>
+                                        <input type="text" id="setWebsiteNameInput" placeholder="Enter Website Name." />
+                                    </div>
+                                </div>
+
+                                <div class="gen-site-dec-box">
+                                    <div class="gen-site-dec">
+                                        <p>Site Description</p>
+                                        <input type="text" id="setWebsiteDecInput" placeholder="Enter Website Description." />
+                                    </div>
+                                </div>
+
+                                <div class="gen-setting-update-btn-box">
+                                    <button>Update Settings</button>
+                                </div>
+                            </div>
+
+                            <div class="gen-content-box">
+                                seo
+                            </div>
+
+                            <div class="gen-content-box">
+                                Themes
+                            </div>
+
+                            <div class="gen-content-box">
+                                other
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-admin-popup-box add-sub-popup-box" id="addSubPopUpBox">
+        <div class="add-admin-popup add-sub-popup">
+            <form action="" method="post">
+                <h5>Add New</h5>
+                <div class="admin-name-box sub-name-box">
+                    <input type="text" id="addSubName" placeholder="Full Name." required/>
+                </div>
+
+                <div class="admin-email-box sub-email-box">
+                    <input type="email" id="addSubEmail" placeholder="Email. (i. e. example@mail.com)" required />
+                </div>
+
+                <div class="admin-add-btn-box sub-add-btn-box">
+                    <button type="submit">Add Sub</button>
+                    <button type="button" id="addSubCancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- content End -->
+
+    <!-- Admin Footer Copyright -->
+
+    <footer>
+        <div class="admin-footer">
+            <div class="admin-copyright">
+                <p id="adminCopyrightText">Developed By - <a href="https://mxfly.site/" id="adminCopyrightLink">YASIR AKHTAR</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Footer Copyright End -->
+
+
+    <!-- js -->
+     
+    <script>
+        var tablinks = document.getElementsByClassName("gen-menu-link");
+        var tabcontents = document.getElementsByClassName("gen-content-box");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("settings-left-active");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("gen-visible");
+            }
+
+            event.currentTarget.classList.add("settings-left-active");
+            document.getElementById(tabname).classList.add("gen-visible");
+        }
+    </script>
+
+    <script src="/admin/assets/js/script.js"></script>
+</body>
+
+</html>
