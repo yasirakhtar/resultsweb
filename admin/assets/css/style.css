@@ -463,15 +463,17 @@ a{
     overflow: hidden;
 }
 
-/* -------  */
+/* ---------------- */
 
 .settings-right-content-box{
     width: 100%;
     padding: 10px;
+    min-height: 415px;
 }
 
 .general-settings{
     overflow: hidden;
+    display: none;
 }
 
 .gen-site-logo-top, .gen-site-favicon-box{
@@ -545,13 +547,12 @@ a{
     margin-bottom: 4px !important;
 }
 
-.gen-site-name input, .gen-site-dec-box input{
+.gen-site-name input, .gen-site-dec-box input, .gen-site-name select{
     width: 100%;
     outline: none;
     height: 35px;
     padding: 0 8px;
     font-size: 13px;
-    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 3px;
 }
@@ -593,4 +594,14 @@ a{
 
 .gen-visible{
     display: block;
+}
+
+.seo-des-box{
+    border: none;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.choose-theme select{
+    cursor: pointer;
 }

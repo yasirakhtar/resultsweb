@@ -60,10 +60,10 @@
                     <div class="settings-left-box">
                         <div class="settings-left-menu">
                             <ul>
-                                <li class="settings-left-active gen-menu-link">General Settings</li>
-                                <li class="gen-menu-link">SEO</li>
-                                <li class="gen-menu-link">Themes Settings</li>
-                                <li class="gen-menu-link">Other</li>
+                                <li class="settings-left-active gen-menu-link" onclick="opentab('generalSettings')">General Settings</li>
+                                <li class="gen-menu-link" onclick="opentab('seoSettings')">SEO</li>
+                                <li class="gen-menu-link" onclick="opentab('themesSettings')">Themes Settings</li>
+                                <li class="gen-menu-link" onclick="opentab('PluginsSettings')">Plugins</li>
                             </ul>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                                     </div>
                                     <div class="gen-site-favicon-box">
                                         <div class="gen-site-favicon-choose-box">
-                                            <p>Site Logo</p>
+                                            <p>Site Favicon</p>
                                             <input type="file" id="chooseSiteLogo" />
                                         </div>
                                         
@@ -108,45 +108,88 @@
                                 </div>
 
                                 <div class="gen-setting-update-btn-box">
-                                    <button>Update Settings</button>
+                                    <button id="updateGenSettingsBtn">Update Settings</button>
                                 </div>
                             </div>
 
-                            <div class="gen-content-box">
-                                seo
+                            <!-- seo settings start -->
+
+                            <div class="seo-settings gen-content-box" id="seoSettings">
+                                <div class="gen-site-name-box seo-des-box">
+                                    <div class="gen-site-name">
+                                        <p>Site Tags</p>
+                                        <input type="text" id="setWebsiteTagsInput" placeholder="Enter Website Tags. (e. g. #resultweb)" />
+                                    </div>
+                                </div>
+
+                                <div class="gen-site-dec-box">
+                                    <div class="gen-site-dec">
+                                        <p>Meta Description</p>
+                                        <input type="text" id="setWebsiteMetaDecInput" placeholder="Enter Website Meta Description." />
+                                    </div>
+                                </div>
+
+                                <div class="gen-site-dec-box">
+                                    <div class="gen-site-dec">
+                                        <p>Site Keywords</p>
+                                        <input type="text" id="setWebsiteKaywordsInput" placeholder="Enter Site Keywords." />
+                                    </div>
+                                </div>
+
+                                <div class="gen-setting-update-btn-box">
+                                    <button id="updateSeoSettingsBtn">Update Settings</button>
+                                </div>
                             </div>
 
-                            <div class="gen-content-box">
-                                Themes
+                            <!-- seo settings end -->
+
+                            <!-- themes settings start -->
+
+                            <div class="themes-settings gen-content-box" id="themesSettings" >
+                                <div class="gen-site-name-box seo-des-box">
+                                    <div class="gen-site-name choose-theme">
+                                        <p>Choose Theme</p>
+                                        <select name="themeOption" id="themesOption">
+                                            <option value="light">Light</option>
+                                            <option value="dark">Dark</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="gen-setting-update-btn-box">
+                                    <button id="updateThemesSettingsBtn">Update Settings</button>
+                                </div>
                             </div>
 
-                            <div class="gen-content-box">
-                                other
+                            <!-- themes settings end -->
+
+                            <!-- plugins setting start -->
+
+                            <div class="plugins-settings gen-content-box" id="PluginsSettings">
+                                <div class="gen-site-name-box seo-des-box">
+                                    <div class="gen-site-name">
+                                        <p>1. Google Analytics Code</p>
+                                        <input type="text" id="setAnalyticskeyInput" placeholder="Enter Google Analytics Code. (e. g. G-JCQZ*****9)" />
+                                    </div>
+                                </div>
+
+                                <div class="gen-site-dec-box">
+                                    <div class="gen-site-dec">
+                                        <p>2. Google Ads Code</p>
+                                        <input type="text" id="setAdsKeyInput" placeholder="Enter Google Ads Key. (e. g. G-JCQZ*****9)" />
+                                    </div>
+                                </div>
+
+                                <div class="gen-setting-update-btn-box">
+                                    <button id="updatePluginsSettingsBtn">Update Settings</button>
+                                </div>                                
                             </div>
+
+                            <!-- plugins settings end -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="add-admin-popup-box add-sub-popup-box" id="addSubPopUpBox">
-        <div class="add-admin-popup add-sub-popup">
-            <form action="" method="post">
-                <h5>Add New</h5>
-                <div class="admin-name-box sub-name-box">
-                    <input type="text" id="addSubName" placeholder="Full Name." required/>
-                </div>
-
-                <div class="admin-email-box sub-email-box">
-                    <input type="email" id="addSubEmail" placeholder="Email. (i. e. example@mail.com)" required />
-                </div>
-
-                <div class="admin-add-btn-box sub-add-btn-box">
-                    <button type="submit">Add Sub</button>
-                    <button type="button" id="addSubCancelBtn">Cancel</button>
-                </div>
-            </form>
         </div>
     </div>
 
