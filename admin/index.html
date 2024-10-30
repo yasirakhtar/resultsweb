@@ -52,32 +52,29 @@
     </script>
 
 <script>
-    var valid_name = localStorage.getItem('username')
-    var valid_pass = localStorage.getItem('password')
-
-    var loguser = document.getElementById("username").value;
-    var logpass = document.getElementById("password").value;
+    var valid_name = localStorage.getItem('username');
+    var valid_pass = localStorage.getItem('password');
 
     function load() {
             if (valid_name, valid_pass === null) {
                 return false
             } else {
-                alert("login")
+                window.location.href = "/admin/dashboard";
             }
         }
     load();
 
     function loginload() {
-        var usern = document.getElementById("username")
-        var Password = document.getElementById("password")
+        var usern = document.getElementById("username");
+        var Password = document.getElementById("password");
 
-        localStorage.setItem('username', usern.value)
-        localStorage.setItem('password', Password.value)
+        localStorage.setItem('username', usern.value);
+        localStorage.setItem('password', Password.value);
     }
 
     function logout() {
-        localStorage.removeItem('username')
-        localStorage.removeItem('password')
+        localStorage.removeItem('username');
+        localStorage.removeItem('password');
     }
 </script>
 
@@ -86,9 +83,9 @@
 
         const admins = [
             {username: "yasir", password: "yasir"},
-            {username: "yasirakhtar", password: "Y@sir1232"},
+            {username: "yasirakhtar", password: "yasir@123"},
             {username: "admin", password: "12345678"},
-            {username: "owner", password: "owner"}
+            {username: "owner", password: "owner", owner: true}
         ]
         
         adminLoginForm.addEventListener("submit", function () {
@@ -101,7 +98,7 @@
             
             if(isValid){
                 loginload();
-                window.location.href = "/admin/dashboard"
+                window.location.href = "/admin/dashboard";
             }
             else{
                 document.getElementById("password").value = '';
