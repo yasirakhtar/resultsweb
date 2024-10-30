@@ -17,7 +17,7 @@
   
     <div class="main-box row justify-content-center align-items-center">
         <div class="form-box card row justify-content-center">
-            <form action="/" method="post" id="adminLoginForm" class="gap-2">
+            <form method="post" id="adminLoginForm" class="gap-2">
                 <div class="input-box w-75">
                     <input type="text" name="username" id="username"  class="w-100 h-100" placeholder="Username." autocomplete="username" required />
                 </div>
@@ -51,6 +51,36 @@
     });
     </script>
 
+<script>
+    var valid_name = localStorage.getItem('username')
+    var valid_pass = localStorage.getItem('password')
+
+    var loguser = document.getElementById("username").value;
+    var logpass = document.getElementById("password").value;
+
+    function load() {
+            if (valid_name, valid_pass === null) {
+                return false
+            } else {
+                alert("login")
+            }
+        }
+    load();
+
+    function loginload() {
+        var usern = document.getElementById("username")
+        var Password = document.getElementById("password")
+
+        localStorage.setItem('username', usern.value)
+        localStorage.setItem('password', Password.value)
+    }
+
+    function logout() {
+        localStorage.removeItem('username')
+        localStorage.removeItem('password')
+    }
+</script>
+
     <script>
         const adminLoginForm = document.querySelector("#adminLoginForm");
 
@@ -70,9 +100,8 @@
             let isValid = admins.some(admin => admin.username === username && admin.password === password);
             
             if(isValid){
-                alert("done");
-                event.target.submit();
-                // window.location.href = "https://google.com"
+                loginload();
+                window.location.href = "/admin/dashboard"
             }
             else{
                 document.getElementById("password").value = '';

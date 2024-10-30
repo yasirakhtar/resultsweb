@@ -15,10 +15,9 @@ adminHeaderLinks.addEventListener("click", function() {
 
 
 adminLogoutBtn.addEventListener("click", function () {
-
-    alert("Storage Data Removing ....")
-
-    window.location.href = "/admin"
+    localStorage.removeItem('username')
+    localStorage.removeItem('password')
+    window.location.href = "/admin";
 });
 
 
