@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts | ResultWeb</title>
+  <link rel="icon" type="image/x-icon" href="https://bit.ly/yasirlogo">
+  <!--<link rel="stylesheet" href="css/w3.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/default/css/nav.css">
+  <link rel="stylesheet" href="/assets/default/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/default/css/style.css">
+  <link rel="stylesheet" href="/admin/assets/css/style.css">
+</head>
+
+<body>
+  
+    <header class="admin-header">
+        <nav>
+            <div class="admin-header-left">
+                <ul>
+                    <li><a href="/admin/dashboard/" id="admin-nav-links">Dashboard</a></li>
+                    <li><a href="/admin/posts/" class="admin-nav-active" id="admin-nav-links">Post</a></li>
+                    <li><a href="/admin/admins/" id="admin-nav-links">Admins</a></li>
+                    <li><a href="/admin/users/" id="admin-nav-links">Users</a></li>
+                    <li><a href="/admin/announcement/" id="admin-nav-links">Announcement</a></li>
+                    <li><a href="/admin/settings/" id="admin-nav-links">Settings</a></li>
+                </ul>
+            </div>
+            <div class="admin-header-right" id="adminHeaderLinks">
+                <div class="admin-nav-profile-link">
+                    <div class="admin-name-box">
+                        <p id="adminUsername">yasir</p>
+                    </div>
+                    <div class="admin-profile-img">
+                        <img src="/admin/assets/img/admin.jpg" id="adminImg" alt="your-image" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="admin-nav-profile-link-box" id="adminNavLinkBox">
+                <a href="/admin/profile">Profile</a>
+                <button id="adminLogoutBtn" class="bg-danger text-white">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header end -->
+
+    <!-- content -->
+
+    <div class="admin-content-box">
+        <div class="posts-box-main">
+            <div class="posts-content">
+                <h5>Posts</h5>
+
+                <div class="posts-list-box">
+                    <div class="post-box">
+                        <div class="post-img-and-info">
+                            <div class="post-img-box">
+                                <img src="/assets/banner/adssquare.jpg">
+                            </div>
+    
+                            <div class="post-info-box">
+                                <div class="post-title-box">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta error vitae aperiam.</h6>
+                                </div>
+                                <div class="post-tags-and-date">
+                                    <div class="post-date">
+                                        <p>Published - 2022-01-01</p>
+                                    </div>
+                                    <div class="post-tags">
+                                        <button class="post-tag-btn">New</button>
+                                        <button class="post-tag-btn">Results</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-action-box">
+                            <button id="postPreviewBtn"><i class="fa-regular fa-eye"></i></button> 
+                            <button id="postEditBtn"><i class="fa-solid fa-pen-to-square"></i></button> 
+                            <button id="postDeleteBtn"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <div class="post-img-and-info">
+                            <div class="post-img-box">
+                                <img src="/assets/banner/adssquare.jpg">
+                            </div>
+    
+                            <div class="post-info-box">
+                                <div class="post-title-box">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta error vitae aperiam.</h6>
+                                </div>
+                                <div class="post-tags-and-date">
+                                    <div class="post-date">
+                                        <p>Published - 2022-01-01</p>
+                                    </div>
+                                    <div class="post-tags">
+                                        <button class="post-tag-btn">New</button>
+                                        <button class="post-tag-btn">Results</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-action-box">
+                            <button id="postPreviewBtn"><i class="fa-regular fa-eye"></i></button> 
+                            <button id="postEditBtn"><i class="fa-solid fa-pen-to-square"></i></button> 
+                            <button id="postDeleteBtn"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-new-post-box">
+                    <div class="add-new-post">
+                        <button id="addNewPostBtn">New Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content End -->
+
+    <!-- Admin Footer Copyright -->
+
+    <footer>
+        <div class="admin-footer">
+            <div class="admin-copyright">
+                <p id="adminCopyrightText">Developed By - <a href="https://mxfly.site/" id="adminCopyrightLink">YASIR AKHTAR</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Footer Copyright End -->
+
+
+    <!-- js -->
+
+    <script src="/admin/assets/js/script.js"></script>
+    <script src="/admin/assets/js/login.js"></script>
+</body>
+
+</html>

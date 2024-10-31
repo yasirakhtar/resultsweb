@@ -136,6 +136,7 @@ a{
     margin: auto;
     margin-top: 100px;
     width: 90%;
+    min-height: 400px;
 }
 
 .admin-row{
@@ -604,4 +605,146 @@ a{
 
 .choose-theme select{
     cursor: pointer;
+}
+
+/* ----------- Posts ----------- */
+
+.posts-list-box{
+    padding: 8px 0;
+}
+
+.post-box{
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.post-img-and-info{
+    display: flex;
+    gap: 15px;
+}
+
+.post-img-and-info p{
+    margin-bottom: 0 !important;
+}
+
+.post-tags-and-date{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.post-tags-and-date .post-date{
+    font-size: 12px;
+}
+
+.post-tags-and-date .post-tags button{
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid #9b9b9b;
+    border-radius: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.post-tags-and-date .post-tags button:hover{
+    background: #ececec71;
+}
+
+.post-box .post-img-box{
+    height: 60px;
+    width: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 1px #c4c4c48c;
+}
+
+.post-box .post-img-box img{
+    max-width: 130%;
+    background-size: cover;
+}
+
+.post-title-box{
+    max-width: 800px;
+}
+
+.post-title-box h6{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    word-wrap: normal;
+    color: #343a40;
+    padding: 2px 0;
+}
+
+.post-action-box button{
+    background: none;
+    margin: 0 2px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #9b9b9b;
+    color: #fff;
+    padding: 5px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.post-action-box button#postPreviewBtn{
+    color: #000;
+}
+
+.post-action-box button#postEditBtn{
+    background: #26bb49;
+    border-color: transparent;
+}
+
+.post-action-box button#postDeleteBtn{
+    background: #fc364a;
+    border-color: transparent;
+}
+
+.post-action-box button#postPreviewBtn:hover{
+    color: #fff;
+    background: #007bff;
+    border-color: transparent;
+}
+
+.post-action-box button#postEditBtn:hover{
+    background: #28a745;
+}
+
+.post-action-box button#postDeleteBtn:hover{
+    background: #dc3545;
+}
+
+.add-new-post-box{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.add-new-post button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 600;
+    border-radius: 30px;
+    background: #26bb49;
+    color: #fff;
+    box-shadow: 0 0 10px 1px #7e7e7eb2;
+}
+
+.add-new-post button:hover{
+    background: #28a745;
 }
